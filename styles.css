@@ -1,91 +1,99 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --desktop-size: 1440px;
-    --mobile-sie: 375px;
-    --color-green: hsl(75, 94%, 57%);
-    --color-white: hsl(0, 0%, 100%);
-    --color-gray-light: hsl(0, 0%, 20%);
-    --color-gray-normal: hsl(0, 0%, 12%);
-    --color-gray-dark:hsl(0, 0%, 8%);
+  --desktop-view-size: 1440px;
+  --mobile-view-siez: 375px;
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray-light: hsl(0, 0%, 20%);
+  --color-gray-normal: hsl(0, 0%, 12%);
+  --color-gray-dark: hsl(0, 0%, 8%);
 }
 
 @font-face {
-    font-family: "Inter";
-    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
-    font-weight: 400 700;
+  font-family: "Inter";
+  src: url(./assets/fonts/Inter-VariableFont_slnt\wght.ttf);
+  font-weight: 400 700;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: var(--desktop-size);
-    height: 100vh;
-    background-color: var(--color-gray-dark);
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--desktop-view-size);
+  height: 100vh;
+  background-color: var(--color-gray-dark);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
 }
 
-.profile-card{
-    background-color: var(--color-gray-normal);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    height: 550px;
-    width: 370px;
-    color: var(--color-white);
-    border-radius: 10px;
+.profile-card {
+  background-color: var(--color-gray-normal);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 550px;
+  width: 370px;
+  color: var(--color-white);
+  border-radius: 10px;
 }
-.profile-picture{
-    width: 100px;
-    border-radius: 50px;
-    margin-top: 20px;
+.profile-picture {
+  width: 100px;
+  border-radius: 50px;
+  margin-top: 20px;
 }
-.profile-info{
-    margin-top: 25px;
-    line-height: 1.4;
-
+.profile-info {
+  margin-top: 25px;
+  line-height: 1.4;
 }
-h1{
-    font-size: 24px;
+h1 {
+  font-size: 24px;
 }
-span{
-    color: var(--color-green);
-    font-weight: 500;
+span {
+  color: var(--color-green);
+  font-weight: 500;
 }
 p {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
-.links-container{
-    height: 350px;
-    margin: 20px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.links-container {
+  height: 350px;
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-.link{
-    height: 40px;
-    width: 300px;
-    background-color: var(--color-gray-light);
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    font-weight: 600;
+.link {
+  height: 40px;
+  width: 300px;
+  background-color: var(--color-gray-light);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: 600;
 }
-.link:hover{
-    cursor: pointer;
-    background-color: var(--color-green);
-    color: var(--color-gray-dark);
-    font-weight: 600;
+.link:hover {
+  cursor: pointer;
+  background-color: var(--color-green);
+  color: var(--color-gray-dark);
+  font-weight: 600;
+}
+
+@media screen and(max-width: 375px) {
+  body {
+    max-width: var(--mobile-sie);
+  }
+  .profile-card {
+    max-width: 360px;
+  }
 }
